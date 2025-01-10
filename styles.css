@@ -6,10 +6,10 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 0)),url(images/banner.jpg);
+    background-image: linear-gradient(rgba(29, 91, 206, 0.534),rgba(41, 60, 230, 0.425)),url(images/banner.jpg);
     background-position: center;
     background-size:cover;
-    position: absolute;
+    position: relative;
 }
 
 nav{
@@ -21,7 +21,6 @@ nav{
 
 nav img{
     width: 45px;
-    position: sticky; 
 }
 
 .nav-links{
@@ -62,24 +61,36 @@ nav img{
     display: flex;
     padding: 20px 20px;
     width: 0%;
-    height: 10px;
+    height: 20px;
     color: rgb(255, 255, 255);
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
     position: relative;
 }
-.logo p{
+
+.logo{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+.logo h2{
+    display: flex;
+    padding: 0px 0px;
     color: rgb(245, 0, 0);
     text-decoration: none;
-    font-size: 100px;
+    font-size: 50px;
 }
 
-
+.logo h2{
+    position: absolute;
+    top: 3px;
+    left: 153px;
+}
 .text-box{
     width: 100%;
     color: rgb(255, 255, 255);
     position: absolute;
-    top: 35%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -93,6 +104,18 @@ nav img{
     color: rgb(255, 255, 255);
 }
 
+.dp-col{
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-top: 45px;
+    position: relative;
+    overflow: hidden;
+}
+.dp-col img{
+    width: 10%;
+    border-radius: 300px;
+}
 /* .contact-us-btn{
     display: inline-block;
     text-decoration: none;
@@ -126,7 +149,7 @@ nav img{
     font-size: 22px;
     color: black;
     position: absolute;
-    top: 85%;
+    top: 93%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -211,6 +234,130 @@ nav .fa{
         }
 }
 /* ------------------------End-Here------------------------------------------- */
+
+/*------------------------- about me --------------------------*/
+.dpaboutme{
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: -100px;
+    margin-top: 45px;
+    position: relative;
+    overflow: hidden;
+}
+.dpaboutme-col img{
+    float: left;
+    margin-right: 50px;
+    width: 25%;
+    border-radius: 50px;
+}
+
+.dpaboutme p{
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 25px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 30px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #0073e6;
+}
+
+/* -------------------Education detail ------------------------*/
+
+.edu{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+
+}
+
+p{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.edu-col {
+    flex-basis: 27%; /* Adjust as per layout requirements */
+    background: rgba(252, 209, 209, 0.829);
+    border-radius: 30px;
+    margin-bottom: 5%;
+    padding: 20px; /* Adjusted padding for better spacing */
+    box-sizing: border-box;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.edu p{
+    text-align: center;
+    line-height: 25px;
+}
+
+
+/*------------------------- Project Details -----------------------------*/
+
+.edu-proj {
+    flex-basis: 27%; /* Adjust as per layout requirements */
+    background: rgba(252, 209, 209, 0.829);
+    border-radius: 30px;
+    margin-bottom: 5%;
+    padding: 20px; /* Adjusted padding for better spacing */
+    box-sizing: border-box;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.project p{
+    text-align: center;
+    line-height: 25px;
+}
+
+.project h1{
+    text-align: center;
+    top: 10px;
+    line-height: 0px;
+}
+
+
+/*--------------------------------- footer ----------------------------*/
+
+footer {
+    background-color: rgba(8, 8, 189, 0.678);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
 
 
 
