@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
 </head>
 <body>
-    <section class="header">
+    <section id="homepage" class="header">
         <nav>
             <div class="nav-links">
                 <div class="logo">
@@ -19,13 +19,13 @@
                     <h2>.</h2>
                 </div>
                 <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">EDUCATION</a></li>
-                    <li><a href="">PROJECTS</a></li>
-                    <li><a href="">PUBLICATIONS</a></li>
+                    <li><a href="#homepage">HOME</a></li>
+                    <li><a href="#exp">EXPERIENCE</a></li>
+                    <li><a href="#edu1">EDUCATION</a></li>
+                    <li><a href="#proj">PROJECTS</a></li>
                     <li><a href="">SKILLS</a></li>
-                    <li><a href="">ABOUT ME</a></li>
-                    <li id="contact"><a href="">CONTACT</a></li>
+                    <li><a href="#aboutme">ABOUT ME</a></li>
+                    <li><a href="#contact-form">CONTACT</a></li>
                 </ul>
             </div>
         </nav>   
@@ -35,7 +35,7 @@
             <h1>"Hello, Welcome", I am Venkata Vardhireddy</h1>
             <div class="class">	
                 <div class="dp-col">
-                    <img src="images/dpsmall.jpg">
+                    <img src="images/dpsmall.JPG">
                 </div>
             </div>
             <p>Junior SAP Consultant and Junior SAP Developer</p>
@@ -47,7 +47,7 @@
 
     <!------------------------------- about me --------------------------->
 
-    <section class="edu">
+    <section id="aboutme" class="edu">
         <h1>About Me</h1>
         <div class="dpaboutme">	
             <div class="dpaboutme-col">
@@ -75,9 +75,41 @@
         </div>
     </section>
 
+<!----------------------------------- Experience------------------------------- -->
+
+
+<section id="exp" class="edu">
+    <h1>Experience</h1>
+    <div class="row">
+        <div class="edu-col">
+            <h3>Software Development Intern</h3>
+            <p><strong>Company:</strong> ABC Tech Solutions</p>
+            <p><strong>Duration:</strong> June 2023 - August 2023</p>
+            <p>Worked on developing scalable web applications, collaborated with cross-functional teams, and implemented responsive design principles.</p>
+        </div>
+        <div class="edu-col">
+            <h3>Software Development Intern</h3>
+                <p><strong>Company:</strong> ABC Tech Solutions</p>
+                <p><strong>Duration:</strong> June 2023 - August 2023</p>
+                <p>Worked on developing scalable web applications, collaborated with cross-functional teams, and implemented responsive design principles.</p>
+            </p>
+
+        <!-- </div>
+        <div class="edu-col">
+            <h3>Bachelors Degree</h3>
+            <p>Masters Program: Electonics and Communication Engineering <br> 
+                University: Kalasalingam Academy of Research and Education <br> 
+                Duration: 4 Years <br> Completed Year: 2020 <br> Grade: 2,3
+            </p>
+        </div> -->
+    </div>
+</section>
+
+
+
 <!-- -----------------------------------Education------------------------------->
 
-    <section class="edu">
+    <section id="edu1" class="edu">
         <h1>Education</h1>
         <div class="row">
             <div class="edu-col">
@@ -105,7 +137,7 @@
 
 
     <!-------------------------- PROJECTS ----------------------------->
-    <section class="project">
+    <section id="proj" class="project">
         <h1>Projects</h1>
         <div class="row">
             <div class="edu-proj">
@@ -132,7 +164,41 @@
         </div>
     </section>
 
+<!-- ----------------------------------hobbies------------------------------ -->
 
+<section id="hobbies">
+    <h1>Hobbies</h1>
+    <div class="hobbies-gallery">
+        <div class="hobby-item">
+            <div class="hobby-item-inner">
+                <img src="images/badminton.jpg" alt="Badminton">
+                <div class="hobby-name">Badminton</div>
+            </div>
+        </div>
+        <div class="hobby-item">
+            <div class="hobby-item-inner">
+                <img src="images/cricket.jpg" alt="Cricket">
+                <div class="hobby-name">Cricket</div>
+            </div>
+        </div>
+        <div class="hobby-item">
+            <div class="hobby-item-inner">
+                <img src="images/hiking.jpg" alt="Hiking">
+                <div class="hobby-name">Hiking</div>
+            </div>
+        </div>
+        <div class="hobby-item">
+            <div class="hobby-item-inner">
+                <img src="images/travel.png" alt="Traveling">
+                <div class="hobby-name">Traveling</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!----------------------------------- contact form ------------------- -->
 
     <section class="contactform">
         <div id="contact-form" class="contact-form-container">

@@ -12,3 +12,40 @@ contactLabel.addEventListener('click', function(event) {
         block: 'start'
     });
 });
+
+function scrollToSection(homepage) {
+    document.getElementById(homepage).scrollIntoView({ behavior: 'smooth' });
+}
+
+function scrollToSection(edu1) {
+    document.getElementById(edu1).scrollIntoView({ behavior: 'smooth' });
+}
+
+function scrollToSection(aboutme) {
+    document.getElementById(aboutme).scrollIntoView({ behavior: 'smooth' });
+}
+
+function scrollToSection(proj) {
+    document.getElementById(proj).scrollIntoView({ behavior: 'smooth' });
+}
+
+function scrollToSection(exp) {
+    document.getElementById(exp).scrollIntoView({ behavior: 'smooth' });
+}
+
+function scrollToSection(edu1) {
+    document.getElementById(edu1).scrollIntoView({ behavior: 'smooth' });
+}
+
+//-------------------- hobbies Animation-------------------------------
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const hobbies = document.querySelectorAll('.hobby-item');
+
+    hobbies.forEach(hobby => {
+        hobby.addEventListener('click', () => {
+            hobby.classList.toggle('flipped');
+        });
+    });
+});
