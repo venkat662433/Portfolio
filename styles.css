@@ -575,7 +575,31 @@ h3{
     outline: none;
 }
 
+/* ---------------------------scroll up----------------------- */
 
+#scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#scroll-to-top:hover {
+    background: #555;
+}
 /*--------------------------------- footer ----------------------------*/
 
 footer {

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,6 +13,20 @@
                 hobby.addEventListener('click', () => {
                     hobby.classList.toggle('flipped');
                 });
+            });
+
+            const scrollToTopButton = document.getElementById('scroll-to-top');
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 200) {
+                    scrollToTopButton.style.display = 'block';
+                } else {
+                    scrollToTopButton.style.display = 'none';
+                }
+            });
+
+            scrollToTopButton.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
             });
         });
     </script>
@@ -77,6 +90,30 @@
         .hobby-item:hover {
             transform: scale(1.05);
         }
+
+        #scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background: #333;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            cursor: pointer;
+            display: none;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #scroll-to-top:hover {
+            background: #555;
+        }
     </style>
 </head>
 <body>
@@ -85,37 +122,119 @@
         <div class="hobbies-gallery">
             <div class="hobby-item">
                 <div class="hobby-item-inner">
-                    <img src="photos/photography.jpg" alt="Photography">
+                    <img src="images/hiking.jpg" alt="Photography">
                     <div class="hobby-name">Photography</div>
                 </div>
             </div>
             <div class="hobby-item">
                 <div class="hobby-item-inner">
-                    <img src="photos/painting.jpg" alt="Painting">
+                    <img src="images/cricket.jpg" alt="Painting">
                     <div class="hobby-name">Painting</div>
                 </div>
             </div>
             <div class="hobby-item">
                 <div class="hobby-item-inner">
-                    <img src="photos/traveling.jpg" alt="Traveling">
+                    <img src="images/banner.jpg" alt="Traveling">
                     <div class="hobby-name">Traveling</div>
                 </div>
             </div>
             <div class="hobby-item">
                 <div class="hobby-item-inner">
-                    <img src="photos/cooking.jpg" alt="Cooking">
+                    <img src="images/bachelors.png" alt="Cooking">
                     <div class="hobby-name">Cooking</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>Email: <a href="mailto:abc@gmail.com">abc@gmail.com</a></p>
-        <p>Phone Number: <a href="phoneto:+491748418663">+491748418663</a></p>
-        <p>Address: Rollwagstraße 2 <br> 74072, Heilbronn <br> Germany</a></p>
-        
-        <p>&copy; 2025 Your Company Name. All rights reserved.</p>
-    </footer>
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <div class="hobbies-gallery">
+            <div class="hobby-item">
+                <div class="hobby-item-inner">
+                    <img src="images/hiking.jpg" alt="Photography">
+                    <div class="hobby-name">Photography</div>
+                </div>
+            </div>
+            <div class="hobby-item">
+                <div class="hobby-item-inner">
+                    <img src="images/cricket.jpg" alt="Painting">
+                    <div class="hobby-name">Painting</div>
+                </div>
+            </div>
+            <div class="hobby-item">
+                <div class="hobby-item-inner">
+                    <img src="images/banner.jpg" alt="Traveling">
+                    <div class="hobby-name">Traveling</div>
+                </div>
+            </div>
+            <div class="hobby-item">
+                <div class="hobby-item-inner">
+                    <img src="images/bachelors.png" alt="Cooking">
+                    <div class="hobby-name">Cooking</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <div class="hobbies-gallery">
+            <div class="hobby-item">
+                <div class="hobby-item-inner">
+                    <img src="images/hiking.jpg" alt="Photography">
+                    <div class="hobby-name">Photography</div>
+                </div>
+            </div>
+            <div class="hobby-item">
+                <div class="hobby-item-inner">
+                    <img src="images/cricket.jpg" alt="Painting">
+                    <div class="hobby-name">Painting</div>
+                </div>
+            </div>
+            <div class="hobby-item">
+                <div class="hobby-item-inner">
+                    <img src="images/banner.jpg" alt="Traveling">
+                    <div class="hobby-name">Traveling</div>
+                </div>
+            </div>
+            <div class="hobby-item">
+                <div class="hobby-item-inner">
+                    <img src="images/bachelors.png" alt="Cooking">
+                    <div class="hobby-name">Cooking</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <div class="hobbies-gallery">
+            <div class="hobby-item">
+                <div class="hobby-item-inner">
+                    <img src="images/hiking.jpg" alt="Photography">
+                    <div class="hobby-name">Photography</div>
+                </div>
+            </div>
+            <div class="hobby-item">
+                <div class="hobby-item-inner">
+                    <img src="images/cricket.jpg" alt="Painting">
+                    <div class="hobby-name">Painting</div>
+                </div>
+            </div>
+            <div class="hobby-item">
+                <div class="hobby-item-inner">
+                    <img src="images/banner.jpg" alt="Traveling">
+                    <div class="hobby-name">Traveling</div>
+                </div>
+            </div>
+            <div class="hobby-item">
+                <div class="hobby-item-inner">
+                    <img src="images/bachelors.png" alt="Cooking">
+                    <div class="hobby-name">Cooking</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <button id="scroll-to-top">&#8593;</button>
 </body>
 </html>
