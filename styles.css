@@ -581,16 +581,24 @@ h3{
 footer {
     background-color: rgba(8, 8, 189, 0.678);
     color: white;
-    text-align: center;
+    text-align: left;
     padding: 10px 0;
     position: relative;
     bottom: 0;
     width: 100%;
 }
 
+.details-footer p{
+    text-align: center;
+    color: white;
+}
+.details-footer p a{
+    color: white;
+}
 footer .social-icons{
         margin: 0 10px;
         font-size: 30px;
+        text-align: center;
         color: #333;
         text-decoration: none;
         transition: color 0.3s ease;
