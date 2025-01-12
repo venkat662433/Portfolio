@@ -174,13 +174,13 @@ nav img{
     white-space: nowrap;
 }
 
-.contact-us-btn:not([disabled]):focus{
-    box-shadow: 0 0 .25rem black, -.125rem -.125rem 1rem black, .125rem .125rem 1rem black;
-}
+/* .contact-us-btn:not([disabled]):focus{
+    box-shadow: 0 0 .25rem rgb(255, 255, 255), -.125rem -.125rem 1rem rgb(255, 255, 255), .125rem .125rem 1rem rgb(255, 255, 255);
+} */
 
-.contact-us-btn:not([disabled]):hover{
-    box-shadow: 0 0 .25rem black, -.125rem -.125rem 1rem black, .125rem .125rem 1rem black;
-}
+/* .contact-us-btn:not([disabled]):hover{
+    box-shadow: 0 0 .25rem rgb(255, 255, 255), -.125rem -.125rem 1rem rgb(255, 255, 255), .125rem .125rem 1rem rgb(255, 255, 255);
+} */
 
 nav .fa{
     display: none;
@@ -272,7 +272,7 @@ nav .fa{
 /* -------------------experience.css ------------------------------*/
 .exp-col {
     flex-basis: 35%; /* Adjust as per layout requirements */
-    background: rgba(252, 209, 209, 0.829);
+    background: #b6cdec;
     border-radius: 30px;
     margin-bottom: -50px;
     padding: 20px; /* Adjusted padding for better spacing */
@@ -286,7 +286,7 @@ nav .fa{
 
 .edu{
     width: 80%;
-    margin: auto;
+    /* margin: auto; */
     text-align: center;
     padding: 100px;
 }
@@ -310,8 +310,8 @@ p{
     justify-content: space-evenly;
 }
 .edu-col {
-    flex-basis: 27%; /* Adjust as per layout requirements */
-    background: rgba(252, 209, 209, 0.829);
+    flex-basis: 30%; /* Adjust as per layout requirements */
+    background: #b6cdec;
     border-radius: 30px;
     margin-bottom: 5%;
     padding: 20px; /* Adjusted padding for better spacing */
@@ -333,8 +333,8 @@ h3{
 /*------------------------- Project Details -----------------------------*/
 
 .edu-proj {
-    flex-basis: 30%; /* Adjust as per layout requirements */
-    background: rgba(252, 209, 209, 0.829);
+    flex-basis: 28%; /* Adjust as per layout requirements */
+    background: #b6cdec;
     border-radius: 30px;
     margin-bottom: 5%;
     padding: 20px; /* Adjusted padding for better spacing */
@@ -415,8 +415,8 @@ h3{
 }
 
 .hobby-item .hobby-name {
-    background: rgba(0, 0, 0, 0.8);
-    color: #fff;
+    background: #b6cdec;
+    color: black;
     font-size: 1.5em;
     transform: rotateY(180deg);
 }
@@ -532,6 +532,7 @@ footer {
     background-color: #0c5ac0;
     color: white;
     text-align: left;
+    font-size: 70%;
     padding: 10px 0;
     position: relative;
     bottom: 0;
@@ -547,7 +548,7 @@ footer {
 }
 footer .social-icons{
         margin: 0 10px;
-        font-size: 30px;
+        font-size: 10px;
         text-align: center;
         color: #333;
         text-decoration: none;
