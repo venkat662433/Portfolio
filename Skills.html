@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .skill {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: conic-gradient(#1804ee 0% var(--percentage), #ddd var(--percentage) 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .skill::before {
+            content: '';
+            position: absolute;
+            width: 120px; /* Inner diameter: 80% of the circle */
+            height: 120px;
+            background: #fff; /* Background inside the circle */
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .skill img {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            z-index: 2;
+        }
+
+        .skill span {
+            position: absolute;
+            top: calc(70% + 75px); /* Skill label outside the border */
+            transform: translateY(-50%);
+            font-size: 1em;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="skills-container">
+        <div class="skill" style="--percentage: 90%;">
+            <span>Python</span>
+            <img src="images/python.png" alt="Python">
+        </div>
+        <div class="skill" style="--percentage: 75%;">
+            <span>SAP SAC</span>
+            <img src="images/SAPSAC.png" alt="SAP SAC">
+        </div>
+        <div class="skill" style="--percentage: 80%;">
+            <span>SAP Data Sphere</span>
+            <img src="images/sap-datasphere.png" alt="SAP Data Sphere">
+        </div>
+        <div class="skill" style="--percentage: 85%;">
+            <span>SAP ABAP</span>
+            <img src="images/sap-datasphere.png" alt="SAP ABAP">
+        </div>
+        <div class="skill" style="--percentage: 70%;">
+            <span>JavaScript</span>
+            <img src="images/JavaScript.png" alt="JavaScript">
+        </div>
+        <div class="skill" style="--percentage: 65%;">
+            <span>Linux</span>
+            <img src="images/Linux.jpg" alt="Linux">
+        </div>
+    </div>
+</body>
+</html>

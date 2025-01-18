@@ -3,6 +3,9 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+.h1{
+    text-align: center;
+}
 .header{
     min-height: 100vh;
     width: 100%;
@@ -114,7 +117,7 @@ nav img{
 }
 .dp-col img{
     width: 10%;
-    border-radius: 300px;
+    border-radius: 100px;
 }
 /* .contact-us-btn{
     display: inline-block;
@@ -358,6 +361,74 @@ h3{
     line-height: 0px;
 }
 
+/*------------------------- skills---------------------------- */
+
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+} */
+
+.myskills{
+    width: 80%;
+    /* margin: auto; */
+    text-align: center;
+    padding: 100px;
+}
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 2%;
+    margin-top: 5%;
+    justify-content: center;
+}
+
+.skill {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: conic-gradient(#5796e9 50% var(--percentage), white var(--percentage) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill::before {
+    content: '';
+    position: absolute;
+    width: 120px; /* Inner diameter: 80% of the circle */
+    height: 120px;
+    background: #fff; /* Background inside the circle */
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.skill img {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.skill span {
+    position: absolute;
+    top: calc(70% + 75px); /* Skill label outside the border */
+    transform: translateY(-50%);
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    z-index: 3;
+}
 
 /*----------------------- hobbies ---------------------------------*/
 
